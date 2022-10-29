@@ -8,6 +8,7 @@ import{
 } from "react-router-dom"
 import App from "./components/productos-admin/tienda.js";
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <App/>
