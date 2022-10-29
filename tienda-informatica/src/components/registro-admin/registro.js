@@ -2,7 +2,8 @@
 
 import React from "react";
 
-export function registro() {
+
+function Registro() {
     return (
         <div class="container">
             <div class="row justify-content-center align-items-center">
@@ -60,8 +61,9 @@ export function registro() {
             </div>
         </div>
     ) 
-    
+
 }
+export default Registro;
 
 /*
 <div class="d-flex justify-content-center align-items-center">
