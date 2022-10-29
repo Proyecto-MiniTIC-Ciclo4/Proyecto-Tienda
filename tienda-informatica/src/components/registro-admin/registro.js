@@ -61,9 +61,12 @@ function Registro() {
             </div>
         </div>
     ) 
+<<<<<<< HEAD
 
 }
 export default Registro;
+=======
+>>>>>>> 81c6519c91a786e63347b3d62608ec3aeb483b66
 
 /*
 <div class="d-flex justify-content-center align-items-center">
@@ -71,3 +74,4 @@ export default Registro;
 </div>
 
 */
+}
