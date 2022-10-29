@@ -4,6 +4,7 @@ import React from 'react';
 import {createRoot} from 'react-dom/client';
 import App from "./components/productos-admin/tienda.js";
 import Registro from "./components/registro-admin/registro.js";
+import { VentasRealizadas } from './components/ventas-realizadas-admin/ventas_Realizadas.js';
 import{
     BrowserRouter,
     Routes,
@@ -20,6 +21,7 @@ root.render(
         <Routes>
             <Route path ="/" element={<App />} />
             <Route path='registro' element={<Registro />} />
+            <Route path='ventas' element={<VentasRealizadas />} />
         </Routes>
         
         </BrowserRouter>,

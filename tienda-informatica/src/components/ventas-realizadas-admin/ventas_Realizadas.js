@@ -1,6 +1,6 @@
 import React from "react";
 
-export function ventas_Realizadas() {
+export function VentasRealizadas() {
     return (
         <div className="ventas_Realizadas">
             <nav class="navbar navbar-expand-lg bg-light">
