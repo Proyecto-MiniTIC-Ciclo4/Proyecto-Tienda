@@ -1,5 +1,5 @@
 import {Fragment} from "react";
-function App() {
+function productosu() {
   return (
     <Fragment>
     <main>
@@ -183,4 +183,4 @@ function App() {
     </Fragment>
   );
 }
-export default App;
+export default productosu;
