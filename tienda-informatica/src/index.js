@@ -10,8 +10,8 @@ import{
     Routes,
     Route
 } from "react-router-dom"
-import {vista} from "./components/vista-login/vistaLoginGen.js";
-import {productosu} from './components/productos-usuario/productos-usuario.js';
+import Login from "./components/vista-login/vistaLoginGen.js";
+import Productosu from './components/productos-usuario/productos-usuario.js';
 
 
 //Renderizacion nueva
@@ -20,11 +20,11 @@ const root = createRoot(rootElement);
 root.render(
     <BrowserRouter>
         <Routes>
-            <Route path ='logeo' element={<vistaLog />} />
+            <Route path ='login' element={<Login />} />
             <Route path='registro' element={<Registro />} />
             <Route path='ventas' element={<VentasRealizadas />} />
-            <Route path='home' element={<App />} />
-            <Route path='product' element={<productosu/>} />
+            <Route path='/' element={<App />} />
+            <Route path='product' element={<Productosu/>} />
             
         </Routes>
         

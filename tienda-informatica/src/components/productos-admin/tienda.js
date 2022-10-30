@@ -12,11 +12,11 @@ function App() {
               podamos tener pronto nuevamente
             </p>
             <p>
-              <a href="#" class="btn btn-primary my-2">
+              <a href="" class="btn btn-primary my-2">
                 Carrito de compras
               </a>
               <br></br>
-              <a href="#" class="btn btn-secondary my-2">
+              <a href="" class="btn btn-secondary my-2">
                 Volver al Inicio
               </a>
             </p>
