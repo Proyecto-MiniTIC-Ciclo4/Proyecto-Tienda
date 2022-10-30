@@ -12,7 +12,6 @@ import{
 } from "react-router-dom"
 
 
-
 //Renderizacion nueva
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
