@@ -14,6 +14,7 @@ import Login from "./components/vista-login/vistaLoginGen.js";
 import Productosu from './components/productos-usuario/productos-usuario.js';
 
 
+
 //Renderizacion nueva
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
