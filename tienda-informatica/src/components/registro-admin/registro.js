@@ -9,9 +9,9 @@ function Registro() {
 
         <Fragment>
             <main>
-                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark  ">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Tienda y electronica JJEJJ</a>
+                        <a class="navbar-brand " href="#">Tienda y electronica JJEJJ</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -21,14 +21,20 @@ function Registro() {
                                     <a class="nav-link active" aria-current="page" href="/">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Productos</a>
+                                    <a class="nav-link" href="registro">Resgistrar producto</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">carrito de compras</a>
+                                    <a class="nav-link" href="ventas">Ventas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="product">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Carrito de compras</a>
                                 </li>
                                 <li class="nav-item disabled">
                                     <a class="nav-link disabled" href="#">Gracias por preferirnos</a>
-                                </li>
+                                </li> 
                             </ul>
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item mr-4">
@@ -50,10 +56,9 @@ function Registro() {
                     </div>
                 </nav>
 
-
-
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-sm-5">
+                <section class="p-2">
+                <div class="row justify-content-center align-items-center ">
+                    <div class="col-sm-4 mt-2 ">
                         <div class=" border mx-auto shadow-lg p-3 mb-5 mt-4 bg-body rounded" >
                             <div class="border mx-auto border-dark rounded mb-3 d-flex justify-content-center align-items-center bg-success text-dark bg-opacity-70 " >
                                 <h1 class="p-2 mt-2 h2 fw-bold">Registro de productos </h1>
@@ -105,6 +110,11 @@ function Registro() {
                         </div>
                     </div>
                 </div>
+                </section>
+
+
+
+                
             </main>
         </Fragment>
     ) 

@@ -15,10 +15,16 @@ function App() {
                           <a class="nav-link active" aria-current="page" href="/">Inicio</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Productos</a>
+                          <a class="nav-link" href="registro">Registrar productos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="ventas">Ventas</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="product">Productos</a>
                       </li>
                       <li  class="nav-item">
-                          <a class="nav-link" href="#">carrito de compras</a>
+                          <a class="nav-link" href="#">Carrito de compras</a>
                       </li>
                       <li  class="nav-item disabled">
                           <a class="nav-link disabled" href="#">Gracias por preferirnos</a>
