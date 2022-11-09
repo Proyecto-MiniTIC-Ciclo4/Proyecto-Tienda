@@ -1,10 +1,22 @@
 //Vista para el registro de productos nuevos
 
 import React from "react";
-import { Fragment } from "react";
+import {Fragment} from "react";
+import {createproductos} from "../../api/apiProductos"
 
 
 function Registro() {
+    // const handleGuardarProducto = (values) =>{
+    //     const producto = {
+    //         isbn: values.isbn,
+    //         title: values.title,
+    //         descripcion: values.descripcion,
+    //         precio: values.precio,
+    //         path: values.path
+    //     }
+    //     createproductos(producto)
+    // }
+    
     return (
 
         <Fragment>
@@ -56,6 +68,42 @@ function Registro() {
                     </div>
                 </nav>
 
+                
+ 
+ 
+                {/* <Formik
+                    initialValues={{ title: '', descripcion: '' }}
+                   
+                    onSubmit={(values) => handleGuardarProducto(values)}
+                      
+                >
+                    {({
+                        values,
+                        errors,
+                    }) => (
+                        <form >
+                            <input
+                                type="text"
+                                name="title"
+                                value={values.title}
+                            />
+                            {errors.email && touched.email && errors.email}
+                            <input
+                                type="password"
+                                name="password"
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={values.password}
+                            />
+                            {errors.password && touched.password && errors.password}
+                            <button type="submit" disabled={isSubmitting}>
+                                Submit
+                            </button>
+                        </form>
+                    )}
+                </Formik> */}
+    
+
                 <section class="p-2">
                 <div class="row justify-content-center align-items-center ">
                     <div class="col-sm-4 mt-2 ">
@@ -63,20 +111,20 @@ function Registro() {
                             <div class="border mx-auto border-dark rounded mb-3 d-flex justify-content-center align-items-center bg-success text-dark bg-opacity-70 " >
                                 <h1 class="p-2 mt-2 h2 fw-bold">Registro de productos </h1>
                             </div>
-                            <form action="" class="row g-3 border mx-auto mt-2 border-dark rounded ">
+                            <form action="" class="row g-3 border mx-auto mt-2 border-dark rounded" method="POST">
                                 <div>
                                     <label for="nombre" class="form-label fw-bold">Nombre</label>
-                                    <input class="form-control mb-2" type="text" name="nombre del producto"
+                                    <input class="form-control mb-2" type="text" name="nombre"
                                         placeholder="Ingrese nombre" />
                                 </div>
                                 <div class="col-md-7 position-relative">
                                     <label for="precio" class="form-label fw-bold">Precio</label>
-                                    <input class="form-control mb-2" type="text" name="Precio del producto"
+                                    <input class="form-control mb-2" type="text" name="precio"
                                         placeholder="Ingrese precio" />
                                 </div>
                                 <div class="col-md-5 position-relative">
                                     <label for="cantidad" class="form-label fw-bold">Cant. en stock</label>
-                                    <input class="form-control mb-2" type="text" name="descripcion"
+                                    <input class="form-control mb-2" type="text" name="cantidad"
                                         placeholder="Ingrese la cantidad" />
                                 </div>
                                 <div>
@@ -86,11 +134,44 @@ function Registro() {
                                 </div>
                                 <div>
                                     <label for="descripcion" class="form-label fw-bold">Descripción del producto</label>
-                                    <textarea class="form-control mb-2" rows="3"
+                                    <textarea class="form-control mb-2" rows="3" type="text" name="descripcion"
                                         placeholder="Ingrese la descripcion del producto"></textarea>
                                 </div>
 
-                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-success px-4 mb-2 mt-1"  type="submit">Guardar</button>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                </section>       
+            </main>
+        </Fragment>
+    ) 
+
+}
+export default Registro;
+
+
+
+
+
+
+
+
+
+/*
+<div class="d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-success px-4 mb-2 mt-1" onClick={handleGuardarProducto()} data-bs-toggle="modal" type="submit">Guardar</button>
+                                    </div>
+
+<div class="d-flex justify-content-center align-items-center">
+<button class="btn btn-success px-4 mb-2 mt-1 "  data-bs-toggle="modal"  type="submit">Guardar</button>
+</div>
+
+
+<div class="d-flex justify-content-center align-items-center">
                                     <button type="button" class="btn btn-success px-4 mb-2 mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Guardar</button>
                                 </div>
                                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -106,26 +187,6 @@ function Registro() {
                                         </div>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                </section>
-
-
-
-                
-            </main>
-        </Fragment>
-    ) 
-
-}
-export default Registro;
-
-/*
-<div class="d-flex justify-content-center align-items-center">
-<button class="btn btn-success px-4 mb-2 mt-1 "  data-bs-toggle="modal"  type="submit">Guardar</button>
-</div>
 
 */
 
