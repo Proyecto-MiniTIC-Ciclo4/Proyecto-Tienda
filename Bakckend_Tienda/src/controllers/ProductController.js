@@ -16,6 +16,14 @@ module.exports = {
                 res.json(product)
             })
     },
+    getProducts: async (req, res) => {
+        const {id} = req.params;
+        await productSchema
+            .findById({_id: id})
+            .exec((error, product) => {
+                res.json(product)
+            })
+    },
     deleteProducts: async (req, res) => {
         const {id} = req.params;
         await productSchema

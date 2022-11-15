@@ -11,7 +11,12 @@ Content-Type: application/json
 }
 
 ### 
-GET http://localhost:3100/api/product HTTP/1.1
+GET http://localhost:3100/api/product HTTP/1.
+
+
+###
+GET http://localhost:3100/api/product/63712d0d182328df66d3953f HTTP/1.1
+
 
 ###
 DELETE  http://localhost:3100/api/product/63712a665f34e7dfa1ebb862 HTTP/1.1

@@ -1,8 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const productRoute = require("./routes/product")
-//const carRoute = require("./routes/car")
-//const compraRoute = require("./routes/compra")
+const userRoute = require("./routes/user")
+const cartRoute = require("./routes/cart")
+const saleRoute = require("./routes/sale")
 
 
 const app = express();
@@ -10,9 +11,10 @@ const port = process.env.PORT || 3100 ;
 
 
 app.use(express.json());
-app.use("/api",productRoute);
-//app.use("/api", carRoute);
-//app.use("/api",compraRoute);
+app.use("/api", productRoute);
+app.use("/api", userRoute);
+app.use("/api", cartRoute);
+app.use("/api", saleRoute);
 
 //Rutas
 
