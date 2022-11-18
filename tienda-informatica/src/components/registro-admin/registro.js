@@ -111,7 +111,7 @@ function Registro() {
                             <div class="border mx-auto border-dark rounded mb-3 d-flex justify-content-center align-items-center bg-success text-dark bg-opacity-70 " >
                                 <h1 class="p-2 mt-2 h2 fw-bold">Registro de productos </h1>
                             </div>
-                            <form action="" class="row g-3 border mx-auto mt-2 border-dark rounded" method="POST">
+                            <form action="http://localhost:3100/api/product" class="row g-3 border mx-auto mt-2 border-dark rounded" method="POST">
                                 <div>
                                     <label for="nombre" class="form-label fw-bold">Nombre</label>
                                     <input class="form-control mb-2" type="text" name="nombre"

@@ -94,7 +94,7 @@ function App() {
                       <div class="card shadow-sm">
                         <img src={item.path}></img>
                         <div class="card-body">
-                          <h5 class="card-title">{item.title}</h5>
+                          <h5 class="card-title">{item.nombre}</h5>
                           <p class="card-text">{item.precio}</p>
                           <p class="card-text"> {item.descripcion}</p>
                           <div class="d-flex justify-content-between align-items-center">
