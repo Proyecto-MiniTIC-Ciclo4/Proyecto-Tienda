@@ -46,7 +46,6 @@ module.exports ={
        .updateOne({ _id: id }, { $set: { producto} })
        .then((data) => res.json(data))
        .catch((error) => res.json({ message: error }));
-
     }
 }
 
