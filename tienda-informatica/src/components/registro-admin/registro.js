@@ -129,8 +129,8 @@ function Registro() {
                                 </div>
                                 <div>
                                     <label for="imagen" class="form-label fw-bold">Imagen del producto</label>
-                                    <input class="form-control mb-2" type="file" name="imagen"
-                                        placeholder="Ingrese la imagen" />
+                                    <input class="form-control mb-2" type="text" name="imagen"
+                                        placeholder="Ingrese el URL de  imagen" />
                                 </div>
                                 <div>
                                     <label for="descripcion" class="form-label fw-bold">Descripción del producto</label>

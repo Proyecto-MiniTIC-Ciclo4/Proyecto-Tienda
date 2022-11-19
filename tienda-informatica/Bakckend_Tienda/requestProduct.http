@@ -29,6 +29,6 @@ Content-Type: application/json
     "nombre":"CPU",
     "precio": 3000000,
     "cantidad":150,
-    "imagen": "imagen del producto",
+    "imagen": "https://i0.wp.com/www.computerevolution.com.co/wp-content/uploads/tarjeta-de-video-msi-rtx-3060-ti-8gb-gddr6-ventus-2x.jpg?fit=1024%2C1024&ssl=1",
     "descripcion": "Super CPU ilimitada"
 }

@@ -5,11 +5,13 @@ const userRoute = require("./routes/user")
 const cartRoute = require("./routes/cart")
 const saleRoute = require("./routes/sale")
 const bodyParser = require ('body-Parser')
+const cors = require('cors')
 
 
 const app = express();
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json()); //Conversion a formato JSON
+app.use(cors());
 const port = process.env.PORT || 3100 ;
 
 

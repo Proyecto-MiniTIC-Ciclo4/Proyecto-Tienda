@@ -13,13 +13,13 @@ function App() {
     getproduct()
     //console.log('Estos son los productos',productos)
 
-  },[])
+  })
   return (
     <Fragment>
     <main>
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
           <div class="container-fluid">
-              <a class="navbar-brand" href="#">Tienda y electronica JJEJJ</a>
+              <a class="navbar-brand" href="">Tienda y electronica JJEJJ</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
@@ -38,22 +38,22 @@ function App() {
                           <a class="nav-link" href="product">Productos</a>
                       </li>
                       <li  class="nav-item">
-                          <a class="nav-link" href="#">Carrito de compras</a>
+                          <a class="nav-link" href="">Carrito de compras</a>
                       </li>
                       <li  class="nav-item disabled">
-                          <a class="nav-link disabled" href="#">Gracias por preferirnos</a>
+                          <a class="nav-link disabled" href="">Gracias por preferirnos</a>
                       </li>
                   </ul>
                   <ul  class="navbar-nav ms-auto">
                       <li class="nav-item mr-4">
-                          <a href="#" class="nav-link disabled">
+                          <a href="" class="nav-link disabled">
                               <i class="fas fa-user"></i>
                               <span>Bienvenido </span>
                           </a>
                       </li>
                       <li class="nav-item">
                           <form method="post" action="/">
-                              <a href="#" onclick="this.parentNode.submit();" class="nav-link">
+                              <a href="" onclick="this.parentNode.submit();" class="nav-link">
                                   <i class="fas fa-sign-out-alt"></i>
                                   Salir
                               </a>
@@ -72,15 +72,6 @@ function App() {
                 Para nosotros es un placer tenerte aqui, espero sea de tu agrado y
                 podamos tener pronto nuevamente
               </p>
-              <p>
-                <a href="" class="btn btn-primary my-2">
-                  Carrito de compras
-                </a>
-                <br></br>
-                <a href="" class="btn btn-secondary my-2">
-                  Volver al Inicio
-                </a>
-              </p>
             </div>
           </div>
         </section>
@@ -92,19 +83,19 @@ function App() {
                   <div class="col" key={index}>
                     <div class="card shadow-sm">
                       <div class="card shadow-sm">
-                        <img src={item.path}></img>
+                        <img src={item.imagen}></img>
                         <div class="card-body">
                           <h5 class="card-title">{item.nombre}</h5>
                           <p class="card-text">{item.precio}</p>
                           <p class="card-text"> {item.descripcion}</p>
                           <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                              <a href="#" class="btn btn-primary">
-                                Descripcion
+                              <a href="" class="btn btn-primary">
+                                Modificar
                               </a>
                             </div>
-                            <a href="#" class="btn btn-success">
-                              Agregar al carrito
+                            <a href="" class="btn btn-success">
+                              Eliminar
                             </a>
                           </div>
                         </div>
