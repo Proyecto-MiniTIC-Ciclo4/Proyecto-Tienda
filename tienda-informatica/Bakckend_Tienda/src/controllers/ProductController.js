@@ -6,7 +6,9 @@ module.exports = {
         const product = await productSchema(req.body);
         product
             .save()
-            .then((data) => res.json(data))
+            .then((re =>{
+                res.redirect('http://localhost:3000/')
+            }))
             .catch((error) => res.json({ message: error }))
     },
     getAllProducts: async (req, res) => {

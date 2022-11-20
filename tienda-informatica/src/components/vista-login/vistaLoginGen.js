@@ -3,7 +3,6 @@ import {Fragment} from "react";
 function Login() {
     return (
         <Fragment>
-            <h1>hola javier</h1>
             <main>
             <section class="vh-100 gradient-custom">
                 <div class="container py-5 h-100">
@@ -14,7 +13,7 @@ function Login() {
                                     <div class="mb-md-5 mt-md-4 pb-5">
                                         <h2 class="fw-bold mb-2 text-uppercase">Gestion productos</h2>
                                         <p class="text-white-50 mb-5">Por favor ingrese su usuario y contraseña</p>
-                                        <form method="post" action="/">
+                                        <form action="http://localhost:3000/">
                                             <div class="form-outline form-white mb-4">
                                                 <input type="text"  class="form-control form-control-lg" />
                                                 <label class="form-label" for="username">Usuario</label>

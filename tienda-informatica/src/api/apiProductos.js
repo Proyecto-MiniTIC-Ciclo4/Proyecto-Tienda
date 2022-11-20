@@ -1,10 +1,10 @@
 
-// export const getproductos = async () =>{
-//     return await 
-//     fetch('http://localhost:3100/api/product') 
-//     .then(res => res.json())
-//     .catch(error => console.error(error))
-// }
+export const getproductos = async () =>{
+    return await 
+    fetch('http://localhost:3100/api/product') 
+    .then(res => res.json())
+    .catch(error => console.error(error))
+}
 
 // export const createproductos = async (producto) =>{
 //     const options = {
