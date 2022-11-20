@@ -29,8 +29,9 @@ app.get("/",(req,res)=>{
 })
 
 //Conexion a DB mongo
+const uri = process.env.URI?process.env.URI:"mongodb+srv://admin:clave123@tiendainfomratica.yrx2ggw.mongodb.net/Tienda?retryWrites=true&w=majority"
 mongoose
-.connect("mongodb+srv://admin:clave123@tiendainfomratica.yrx2ggw.mongodb.net/Tienda?retryWrites=true&w=majority")
+.connect(uri)
 .then(()=>console.log("Conectado a la base de datos mongo"))
 .catch((error)=>console.error(error))
 
