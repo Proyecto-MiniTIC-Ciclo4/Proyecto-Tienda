@@ -14,17 +14,13 @@ function App() {
     getproduct();
     //console.log('Estos son los productos',productos)
 
-  })
+  },[])
   return (
     <Fragment>
     <main>
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
           <div class="container-fluid">
-<<<<<<< HEAD
               <a class="navbar-brand" href="http://localhost:3000/">Tienda y electronica JJEJJ</a>
-=======
-              <a class="navbar-brand" href="">Tienda y electronica JJEJJ</a>
->>>>>>> d2af4714e21560f9d424af250e8bd524e4dad006
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
@@ -42,30 +38,20 @@ function App() {
                       <li class="nav-item">
                           <a class="nav-link" href="product">Productos</a>
                       </li>
-<<<<<<< HEAD
-=======
-                      <li  class="nav-item">
-                          <a class="nav-link" href="">Carrito de compras</a>
-                      </li>
->>>>>>> d2af4714e21560f9d424af250e8bd524e4dad006
                       <li  class="nav-item disabled">
-                          <a class="nav-link disabled" href="">Gracias por preferirnos</a>
+                          <a class="nav-link disabled" href="#">Gracias por preferirnos</a>
                       </li>
                   </ul>
                   <ul  class="navbar-nav ms-auto">
                       <li class="nav-item mr-4">
-                          <a href="" class="nav-link disabled">
+                          <a href="#" class="nav-link disabled">
                               <i class="fas fa-user"></i>
                               <span>Bienvenido </span>
                           </a>
                       </li>
                       <li class="nav-item">
                           <form method="post" action="/">
-<<<<<<< HEAD
                               <a href="http://localhost:3000/login/" class="nav-link">
-=======
-                              <a href="" onclick="this.parentNode.submit();" class="nav-link">
->>>>>>> d2af4714e21560f9d424af250e8bd524e4dad006
                                   <i class="fas fa-sign-out-alt"></i>
                                   Salir
                               </a>
@@ -102,19 +88,11 @@ function App() {
                           <p class="card-text"> {item.descripcion}</p>
                           <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-<<<<<<< HEAD
                               <a href="#" class="btn btn-primary">
                                 Editar
                               </a>
                             </div>
                             <a href="http://localhost:3000/" class="btn btn-success ">
-=======
-                              <a href="" class="btn btn-primary">
-                                Modificar
-                              </a>
-                            </div>
-                            <a href="" class="btn btn-success">
->>>>>>> d2af4714e21560f9d424af250e8bd524e4dad006
                               Eliminar
                             </a>
                           </div>

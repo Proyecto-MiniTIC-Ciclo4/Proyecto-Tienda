@@ -6,17 +6,13 @@ const cartRoute = require("./routes/cart")
 const saleRoute = require("./routes/sale")
 const bodyParser = require ('body-Parser')
 const cors = require('cors')
-<<<<<<< HEAD
 
-=======
->>>>>>> d2af4714e21560f9d424af250e8bd524e4dad006
 
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json()); //Conversion a formato JSON
-app.use(cors());
 const port = process.env.PORT || 3100 ;
 
 
