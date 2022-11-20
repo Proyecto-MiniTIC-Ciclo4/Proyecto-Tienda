@@ -1,9 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const productRoute = require("./routes/product")
-const userRoute = require("./routes/user")
-const cartRoute = require("./routes/cart")
-const saleRoute = require("./routes/sale")
+const productRoute = require("./src/routes/product")
+const userRoute = require("./src/routes/user")
+const cartRoute = require("./src/routes/cart")
+const saleRoute = require("./src/routes/sale")
 const bodyParser = require ('body-Parser')
 const cors = require('cors')
 
